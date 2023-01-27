@@ -579,6 +579,25 @@ h3 > a { color: inherit; }
 
 .product .btn { margin-inline: auto; }
 
+#voirPlus::before,
+#voirPlus::after{
+  content: "";
+  position: absolute;
+  width:25%;
+  height: 5%;
+  background: rgba(0, 0, 0, 0.664);
+  border-radius: 10px;
+  z-index: -1;
+}
+@keyframes pulse{
+  100%{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+#voirPlus::before{
+  animation: pulse 2s ease-out infinite;
+}
 
 
 
