@@ -464,6 +464,9 @@ h3 > a { color: inherit; }
 .category-item {
   width: 100%;
   position: relative;
+  border: 1px solid transparent;
+  border-radius: 7px;
+
 }
 
 .category-banner {
@@ -476,6 +479,8 @@ h3 > a { color: inherit; }
   height: 100%;
   object-fit: cover;
   transition: var(--transition-2);
+  border-radius: 7px;
+
 }
 
 .category-item:hover .category-banner img { transform: scale(1.05); }
@@ -718,7 +723,7 @@ h3 > a { color: inherit; }
   border-radius: 6px;
 }
 
-.newsletter-card .input-wrapper ion-icon {
+.newsletter-card .input-wrapper i{
   font-size: 18px;
   position: absolute;
   top: 50%;
